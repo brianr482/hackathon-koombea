@@ -1,0 +1,16 @@
+div.wrapper {
+  height: 100%;
+  padding: 78px;
+}
+
+@media screen and (max-width: 680px) {
+  div.wrapper {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  div.wrapper {
+    padding: 10px;
+  }
+}

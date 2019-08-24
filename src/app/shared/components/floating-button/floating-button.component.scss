@@ -1,0 +1,19 @@
+div.wrapper {
+  cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #4d79ff;
+  span {
+    font-size: 28px;
+    margin: 0 auto;
+  }
+}

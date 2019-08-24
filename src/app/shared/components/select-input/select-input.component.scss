@@ -1,0 +1,39 @@
+$selectWidth: 222px;
+div.wrapper {
+  cursor: pointer;
+  width: $selectWidth;
+  height: 46px;
+  border-radius: 14px;
+  background-color: #f4f5f8;
+  display: flex;
+  align-content: center;
+  padding: 14px 18px;
+  justify-content: space-between;
+  span {
+    font-family: 'Karla';
+    color: #000;
+  }
+}
+div.options {
+  width: $selectWidth;
+  position: absolute;
+  background-color: #f4f5f8;
+  color: #000;
+  margin-top: -11px;
+  div.options-list {
+    display: flex;
+    flex-direction: column;
+    span {
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      &:hover, &.active {
+        background-color: #e8e9eb;
+      }
+      &:last-child:hover, &.active:last-child {
+        border-radius: 0 0 14px 14px;
+      }
+    }
+  }
+  border-radius: 0 0 14px 14px;
+}

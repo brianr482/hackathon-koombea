@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="header">
+    <div class="filter">
+      <span>
+        Ordenar
+      </span>
+      <app-select-input [selectedOption]="filter.current"
+        (optionEvent)="onOptionChange($event)"
+        [options]="filter.options"></app-select-input>
+    </div>
+    <app-paginator [paginator]="paginator"
+      (pageEvent)="onPageChange($event)"
+    ></app-paginator>
+  </div>
+  <ng-container *ngIf="!isLoading; else loading">
+    <div class="product-list">
+      <app-product-card *ngFor="let product of products"
+        [product]="product">
+      </app-product-card>
+    </div>
+  </ng-container>
+  <ng-template #loading>
+    <div class="loading">
+      <h3 class="loading">
+        Cargando…
+      </h3>
+    </div>
+  </ng-template>
+</div>
+
+<app-floating-button label="↻"
+  (click)="fetch()">
+</app-floating-button>

@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div>
+    <span>{{ pageDescription }}&nbsp;</span>
+    <span class="separator">|</span>
+  </div>
+  <div>
+    <span class="page-number"
+      [class.active]="i + 1 === paginator.index"
+      *ngFor="let page of dummyIterator; index as i"
+      (click)="selectPage(i + 1)">
+      &nbsp; {{ i + 1 }}
+    </span>
+  </div>
+</div>

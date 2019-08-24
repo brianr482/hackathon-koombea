@@ -1,0 +1,35 @@
+<app-card>
+  <img [src]="product.photo" alt="product-image" card-image>
+  <div class="description" card-body>
+    <span class="city">
+      {{ product.city }}
+    </span>
+    <span class="name">
+      {{ product.name }}
+    </span>
+    <span class="price">
+      Desde COP ${{ product.price }}
+    </span>
+    <div class="other">
+      <div class="rating">
+        <img src="assets/icon/rating.svg" alt="rate-icon">
+        <span> {{ ratingDescription }} </span>
+      </div>
+      <div class=fav>
+        <ng-container *ngIf="product.fav; else noFav">
+          <img (click)="toggleFav()"
+          src="assets/icon/red_heart.svg"
+          alt="fav-icon">
+          <!-- <object type="image/svg+xml"
+            data="assets/icon/red_heart.svg">
+          </object>   -->
+        </ng-container>
+        <ng-template #noFav>
+          <img (click)="toggleFav()"
+            src="assets/icon/heart.svg"
+            alt="fav-icon">
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</app-card>

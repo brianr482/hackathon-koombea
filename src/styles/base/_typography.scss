@@ -1,0 +1,72 @@
+@font-face {
+	font-family: "Karla";
+	src: url("/assets/fonts/Karla/Karla-Regular.woff");
+}
+
+@font-face {
+  font-family: "Karla";
+  font-weight: bold;
+	src: url("/assets/fonts/Karla/Karla-Bold.woff");
+}
+
+@font-face {
+  font-family: "Karla";
+  font-weight: bold;
+  font-style: italic;
+	src: url("/assets/fonts/Karla/Karla-BoldItalic.woff");
+}
+
+@font-face {
+  font-family: "Karla";
+  font-style: italic;
+	src: url("/assets/fonts/Karla/Karla-Italic.woff");
+}
+
+@font-face {
+	font-family: "HKGrotesk";
+	src: url("/assets/fonts/KkGrotesk/HKGrotesk-Regular.otf");
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: bold;
+	src: url("/assets/fonts/KkGrotesk/HKGrotesk-Bold.otf");
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: normal;
+	src: url("/assets/fonts/KkGrotesk/HKGrotesk-Medium.otf");
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: lighter;
+	src: url("/assets/fonts/KkGrotesk/HKGrotesk-Light.otf");
+}
+
+@font-face {
+	font-family: "Muli";
+	src: url("/assets/fonts/muli/Muli-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Muli";
+  font-weight: bold;
+	src: url("/assets/fonts/muli/Muli-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Muli";
+  font-weight: lighter;
+  src: url("/assets/fonts/muli/Muli-Light.ttf");
+} 
+
+.f {
+  &-center {
+    text-align: center;
+  }
+  &-sm {
+    font-size: small;
+  }
+}

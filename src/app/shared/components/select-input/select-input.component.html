@@ -1,0 +1,22 @@
+<div class="wrapper"
+  (click)="toggleMenu()">  
+  <span>
+    {{ 
+      selectedOption ? ((selectedOption | productFilterOption) | titlecase) 
+        : 'Ninguno'
+    }}
+  </span>
+  <span>
+    <!-- Falta el asset del dropdown -->
+  </span>
+</div>
+<div *ngIf="activeMenu"
+  class=options>
+  <div class="options-list">
+    <span *ngFor="let option of options"
+      (click)="selectOption(option)"
+      [class.active]="selectedOption === option">
+      {{ option ? (option | productFilterOption) : 'ninguno' }}
+    </span>
+  </div>
+</div>

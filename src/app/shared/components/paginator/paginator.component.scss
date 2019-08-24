@@ -1,0 +1,24 @@
+div.wrapper {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Karla';
+}
+
+span.page-number {
+  cursor: pointer;
+  &.active {
+    color: #37656A;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  span.separator {
+    display: none;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 775px) {
+  div.wrapper {
+    flex-direction: column;
+    align-items: center;
+  } 
+}
